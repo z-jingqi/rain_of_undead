@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8q6y4n2x1m3p"]
+
+[ext_resource type="Script" path="res://scripts/ui/game_ui.gd" id="1_ui"]
+
+[node name="GameUI" type="CanvasLayer"]
+script = ExtResource("1_ui")
+
+[node name="HealthContainer" type="HBoxContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -200.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = 60.0
+grow_horizontal = 0
+
+[node name="HealthLabel" type="Label" parent="HealthContainer"]
+layout_mode = 2
+text = "生命值: "
+
+[node name="HealthValue" type="Label" parent="HealthContainer"]
+layout_mode = 2
+text = "3"
+
+[node name="ScoreContainer" type="HBoxContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -200.0
+offset_top = 60.0
+offset_right = -20.0
+offset_bottom = 100.0
+grow_horizontal = 0
+
+[node name="ScoreLabel" type="Label" parent="ScoreContainer"]
+layout_mode = 2
+text = "分数: "
+
+[node name="ScoreValue" type="Label" parent="ScoreContainer"]
+layout_mode = 2
+text = "0" 
